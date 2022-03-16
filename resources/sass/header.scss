@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    &__logo{
+        font-weight: bold;
+        color: #B0B0B0;
+    }
+    &__title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+    }
+    &__inform{
+        font-size: 0.8rem;
+    }
+}

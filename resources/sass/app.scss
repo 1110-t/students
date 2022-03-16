@@ -1,0 +1,52 @@
+// reset cssをインポートする
+@import "reset.scss";
+// 共通で呼び出すCSS
+@import "common.scss";
+// header
+@import "header.scss";
+
+.input{
+    .main{
+        background-color: white;
+        max-width: 80%;
+        margin: 0 auto;
+        &__form{
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 50px 0px;
+        }
+        .form{
+            &__input{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &__title{
+                    color:#20ACB3;
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                    margin-bottom: 30px;
+                }
+                &__box{
+                    width:100%;
+                    display: flex;
+                    align-items: center;
+                    label{
+                        max-width: 300px;
+                        min-width:fit-content;
+                        width: 17%;
+                        font-weight: bold;
+                    }
+                    input{
+                        width: 100%;
+                        border: #D2D2D4 1px solid;
+                    }
+                }
+            }
+        }
+        .error{
+            &__name{
+                position:absolute;
+            }
+        }
+    }
+}
